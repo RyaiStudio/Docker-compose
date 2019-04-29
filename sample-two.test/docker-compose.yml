@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  server-two:
+    build: .
+    volumes:
+      - ./:/usr/share/nginx/html/sample-two.test
+    ports:
+      - 8002:80
